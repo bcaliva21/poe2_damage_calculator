@@ -1,0 +1,30 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Damage Calculator</title>
+</head>
+<body>
+    <h1>Welcome to the Damage Calculator</h1>
+    <form action="/submit" method="post">
+        <label for="baseDamage">Base Damage:</label>
+        <input type="number" id="baseDamage" name="baseDamage" required><br><br>
+
+        <label for="addedDamage">Added Damage (comma-separated low and high values):</label>
+        <input type="text" id="addedDamage" name="addedDamage"><br><br>
+
+        <label for="moreDamage">More Damage (comma-separated percentage values):</label>
+        <input type="text" id="moreDamage" name="moreDamage"><br><br>
+
+        <label for="increasedDamage">Increased Damage (comma-separated percentage values):</label>
+        <input type="text" id="increasedDamage" name="increasedDamage"><br><br>
+
+        <label for="hitRate">Hit Rate (attacks/casts per second):</label>
+        <input type="number" step="0.01" id="hitRate" name="hitRate" required><br><br>
+
+        <input type="submit" value="Submit">
+    </form>
+</body>
+</html>
